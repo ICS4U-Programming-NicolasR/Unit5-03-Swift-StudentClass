@@ -15,7 +15,7 @@ struct Student {
     let lastName: String
     let grade: Int
     let iep: Bool
-    
+
     init(firstName: String, middleInit: String?, lastName: String, grade: Int, iep: Bool) {
         self.firstName = firstName
         self.middleInit = middleInit
@@ -23,7 +23,7 @@ struct Student {
         self.grade = grade
         self.iep = iep
     }
-    
+
     func printInfo() {
         if let middleInit = middleInit {
             print("First Name: \(firstName), Middle Initial: \(middleInit),
