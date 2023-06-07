@@ -26,7 +26,8 @@ struct Student {
     
     func printInfo() {
         if let middleInit = middleInit {
-            print("First Name: \(firstName), Middle Initial: \(middleInit), Last Name: \(lastName), Grade: \(grade), IEP: \(iep)")
+            print("First Name: \(firstName), Middle Initial: \(middleInit),
+                 Last Name: \(lastName), Grade: \(grade), IEP: \(iep)")
         } else {
             print("First Name: \(firstName), Last Name: \(lastName), Grade: \(grade), IEP: \(iep)")
         }
@@ -74,7 +75,8 @@ func main() {
                 iep = studentInfoArr[3] == "y"
             }
             // create the student object
-            let student = Student(firstName: firstName, middleInit: middleInit, lastName: lastName, grade: grade, iep: iep)
+            let student = Student(firstName: firstName, middleInit: middleInit,
+                 lastName: lastName, grade: grade, iep: iep)
             // print the info
             student.printInfo()
         }
